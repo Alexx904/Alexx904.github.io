@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Student at Polytechnic of Bari
+role: Studente al Politecnico di Bari
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,14 +34,14 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'alessandrominiello@gmail.com'
+    url: 'mailto:alessandrominiello@gmail.com'
     label: E-mail Me
 #  - icon: brands/x
 #    url: https://twitter.com/AlexAIResearch
   - icon: brands/github
     url: https://github.com/Alexx904
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alessandrominiello/
+    url: https://www.linkedin.com/in/alessandro-miniello/
 #  - icon: academicons/google-scholar
 #    url: https://scholar.google.com/citations?user=alexjohnson
 #  - icon: academicons/orcid
@@ -53,8 +53,8 @@ interests:
   - AI
 
 education:
-  - area: BSc in Computer Science and Automation Engineering
-    institution: Polytechnic of Bari
+  - area: Laurea in Ingegneria Informatica
+    institution: Politecnico di Bari
     icon: ""
     date_start: 2023-10-01
     date_end: 2026-06-30
@@ -63,15 +63,13 @@ education:
 #    button:
 #      text: 'Read Thesis'
 #      url: 'https://example.com/thesis.pdf'
-  - area: Business Information System
+  - area: Sistemi Informativi Aziendali
     institution: Marco Polo Bari
     icon: ""
     date_start: 2018-09-01
     date_end: 2023-07-31
-#    summary: |
-#      GPA: 4.0/4.0
-#
-#      Specialized in machine learning and robotics.
+    summary: |
+      Votazione: 95/100
 #  - area: BS Computer Science
 #    institution: MIT
 #    icon: ""
@@ -90,7 +88,7 @@ work:
     date_start: 2023-01-01
     date_end: '2025-10-01'
     summary: |2-
-      Supervisionato il ciclo di vita end-to-end di 3+ siti WordPress per clienti del settore ristorazione e fitness, dalla raccolta
+      ● Supervisionato il ciclo di vita end-to-end di 3+ siti WordPress per clienti del settore ristorazione e fitness, dalla raccolta
       requisiti al deploy.
       ● Assicurata l'operatività (uptime) e le performance ottimali dei siti, gestendo la diagnostica e la risoluzione di bug e
       problematiche tecniche.
@@ -140,16 +138,16 @@ skills:
         icon: book-open
 
 languages:
-  - name: English
+  - name: Italian
     percent: 100
-  - name: Spanish
+  - name: English
     percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
+#awards:
 #  - title: Best Paper Award
 #    url: https://neurips.cc/
 #    date: '2022-12-01'
