@@ -75,3 +75,8 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+.*\content\blog
+.*\content\courses
+.*\content\events
+.*\content\publications
