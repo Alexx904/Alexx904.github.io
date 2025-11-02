@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Studente al Politecnico di Bari
+role: Studente del Politecnico di Bari
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -88,11 +88,11 @@ work:
     date_start: 2023-01-01
     date_end: '2025-10-01'
     summary: |2-
-      ● Supervisionato il ciclo di vita end-to-end di 3+ siti WordPress per clienti del settore ristorazione e fitness, dalla raccolta
+      Supervisionato il ciclo di vita end-to-end di 3+ siti WordPress per clienti del settore ristorazione e fitness, dalla raccolta
       requisiti al deploy.
-      ● Assicurata l'operatività (uptime) e le performance ottimali dei siti, gestendo la diagnostica e la risoluzione di bug e
+      Assicurata l'operatività (uptime) e le performance ottimali dei siti, gestendo la diagnostica e la risoluzione di bug e
       problematiche tecniche.
-      ● Analizzati i requisiti di business dei clienti, traducendoli in specifiche tecniche e sviluppando funzionalità WordPress
+      Analizzati i requisiti di business dei clienti, traducendoli in specifiche tecniche e sviluppando funzionalità WordPress
       personalizzate per soddisfare esigenze specifiche.
 #  - position: AI Research Intern
 #    company_name: OpenAI
