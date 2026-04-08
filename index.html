@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alessandro Miniello — AI Engineer</title>
+  <meta name="description" content="Portfolio di Alessandro Miniello, AI Engineer e Automation Specialist basato a Bari, Italia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-circle"></div>
+
+<!-- Scroll Progress -->
+<div id="progress-bar"></div>
+
+<!-- Particle Canvas -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- Decorative Orbs -->
+<div class="orb-float orb1"></div>
+<div class="orb-float orb2"></div>
+
+<!-- ========================================================
+     NAV
+======================================================== -->
+<nav>
+  <div class="nav-logo"><span>~/</span>a.miniello</div>
+  <ul class="nav-links">
+    <li><a href="#experience" data-i18n="nav-exp">Esperienza</a></li>
+    <li><a href="#projects"   data-i18n="nav-proj">Progetti</a></li>
+    <li><a href="#skills"     data-i18n="nav-skills">Competenze</a></li>
+    <li><a href="#education"  data-i18n="nav-edu">Formazione</a></li>
+    <li><a href="#contact"    data-i18n="nav-contact">Contatti</a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="it">IT</button>
+    <button class="lang-btn"        data-lang="en">EN</button>
+  </div>
+</nav>
+
+<!-- ========================================================
+     HERO
+======================================================== -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-tag" data-i18n="hero-tag">AI Engineer · Bari, Italia</div>
+
+    <h1 class="hero-name">
+      Alessandro<br><span class="italic-word">Miniello</span>
+    </h1>
+
+    <div class="hero-role-wrap">
+      <div class="hero-role-line"></div>
+      <span class="hero-role">
+        <span class="typed">AI Engineer</span><span class="cursor-blink"></span>
+      </span>
+    </div>
+
+    <p class="hero-desc" data-i18n="hero-desc">
+      Sviluppatore e ingegnere specializzato in intelligenza artificiale e automazione dei processi.
+      Appassionato di tecnologia, VR e soluzioni innovative per le sfide aziendali moderne.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="mailto:alessandrominiello@gmail.com" class="btn btn-primary" data-i18n="btn-contact">Contattami</a>
+      <a href="https://github.com/Alexx904"                  target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num"><span data-target="3" data-i18n-skip>0</span><span class="accent">+</span></div>
+        <div class="stat-label" data-i18n="stat-exp-l">Anni di esperienza</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-target="3" data-i18n-skip>0</span><span class="accent">+</span></div>
+        <div class="stat-label" data-i18n="stat-proj-l">Progetti completati</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span data-target="21" data-i18n-skip>0</span></div>
+        <div class="stat-label" data-i18n="stat-age-l">Anni</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile Card -->
+  <div class="profile-card-wrap">
+    <div class="profile-card">
+      <div class="profile-card-inner">
+        <img src="assets/profile.jpg" alt="Alessandro Miniello" class="profile-img">
+        <div class="profile-badge">
+          <div class="badge-name">Alessandro Miniello</div>
+          <div class="badge-status">
+            <span class="badge-dot"></span>
+            <span data-i18n="badge-status-txt">Disponibile per opportunità</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <!-- ========================================================
+       EXPERIENCE
+  ======================================================== -->
+  <section id="experience">
+    <div class="section-wrap">
+      <div class="s-head reveal">
+        <span class="s-num">01 / esperienza</span>
+        <div class="s-line"></div>
+      </div>
+      <h2 class="s-title reveal" data-i18n="s-exp">Dove ho lavorato</h2>
+      <p class="s-sub reveal"   data-i18n="s-exp-sub">Il mio percorso professionale</p>
+
+      <div class="timeline">
+
+        <!-- Dyrecta -->
+        <div class="tl-item reveal">
+          <div class="tl-side">
+            <div class="tl-date-text">01/04/2026<br>— Presente</div>
+            <div class="tl-current-badge" data-i18n="tl-current">In corso</div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-company">Dyrecta Lab srl</div>
+            <div class="tl-role" data-i18n="tl-role-1">AI Engineer</div>
+            <div class="tl-location" data-i18n="tl-loc-1">📍 Bari, Italia</div>
+          </div>
+        </div>
+
+        <!-- We Are Mira -->
+        <div class="tl-item reveal">
+          <div class="tl-side">
+            <div class="tl-date-text">2023<br>— 2025</div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-company">We Are Mira</div>
+            <div class="tl-role" data-i18n="tl-role-2">Automation Specialist &amp; Developer</div>
+            <div class="tl-location" data-i18n="tl-loc-2">📍 Milano, Italia</div>
+            <ul class="tl-bullets">
+              <li data-i18n="tl-b2-1">Progettato e implementato workflow di automazione per ottimizzare i processi aziendali dei clienti.</li>
+              <li data-i18n="tl-b2-2">Assicurata l'operatività e le performance ottimali dei siti, gestendo diagnostica e risoluzione di bug.</li>
+              <li data-i18n="tl-b2-3">Analizzati i requisiti di business dei clienti, sviluppando funzionalità WordPress personalizzate.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       PROJECTS
+  ======================================================== -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="s-head reveal">
+        <span class="s-num">02 / progetti</span>
+        <div class="s-line"></div>
+      </div>
+      <h2 class="s-title reveal" data-i18n="s-proj">Cosa ho costruito</h2>
+      <p class="s-sub reveal"   data-i18n="s-proj-sub">Progetti recenti e personali</p>
+
+      <div class="projects-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-header">
+            <div class="proj-year">2026</div>
+            <div class="proj-icon">🥽</div>
+          </div>
+          <div class="proj-title">ECO-SORTER VR</div>
+          <div class="proj-desc" data-i18n="proj1-desc">
+            Simulazione VR per l'apprendimento del corretto smaltimento dei rifiuti. Il giocatore afferra oggetti e li smista nei contenitori giusti per guadagnare punti.
+          </div>
+          <div class="proj-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">VR</span>
+            <span class="tag">C#</span>
+          </div>
+          <a href="https://github.com/Alexx904/ECO-SORTER-VR" target="_blank" class="proj-link">
+            <span data-i18n="proj-link">Vedi su GitHub</span> <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-header">
+            <div class="proj-year">2025</div>
+            <div class="proj-icon">📰</div>
+          </div>
+          <div class="proj-title">AI News-to-Article Automation</div>
+          <div class="proj-desc" data-i18n="proj2-desc">
+            Workflow di content creation automatizzato tramite RSS: genera testi, immagini AI, metadati SEO e pubblica su più piattaforme.
+          </div>
+          <div class="proj-tags">
+            <span class="tag">N8N</span>
+            <span class="tag">WordPress API</span>
+            <span class="tag">OpenAI API</span>
+            <span class="tag">AI Image Gen</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-header">
+            <div class="proj-year">2025</div>
+            <div class="proj-icon">📋</div>
+          </div>
+          <div class="proj-title">Tax Deadline WebApp</div>
+          <div class="proj-desc" data-i18n="proj3-desc">
+            WebApp per la gestione di anagrafiche clienti e scadenze fiscali con notifiche automatiche via Email, PEC e Telegram.
+          </div>
+          <div class="proj-tags">
+            <span class="tag">N8N</span>
+            <span class="tag">Telegram API</span>
+            <span class="tag">Google Sheets</span>
+            <span class="tag">Apps Script</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SKILLS
+  ======================================================== -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="s-head reveal">
+        <span class="s-num">03 / competenze</span>
+        <div class="s-line"></div>
+      </div>
+      <h2 class="s-title reveal" data-i18n="s-skills">Strumenti &amp; Tecnologie</h2>
+      <p class="s-sub reveal"   data-i18n="s-skills-sub">Tecnologie con cui lavoro</p>
+
+      <div class="skills-layout">
+        <div>
+          <div class="skill-group-title reveal" data-i18n="sg-lang">Linguaggi</div>
+          <div class="skill-chips reveal">
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">C#</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">MATLAB</span>
+            <span class="skill-chip">JavaScript</span>
+          </div>
+          <br>
+          <div class="skill-group-title reveal" data-i18n="sg-frame">Framework &amp; Tools</div>
+          <div class="skill-chips reveal">
+            <span class="skill-chip">Git</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">WordPress</span>
+            <span class="skill-chip">Unity</span>
+            <span class="skill-chip">N8N</span>
+            <span class="skill-chip">OpenAI API</span>
+            <span class="skill-chip">Linux</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-group-title reveal" data-i18n="sg-langs-h">Lingue</div>
+          <div class="langs-grid reveal">
+            <div class="lang-row">
+              <span class="lang-name">Italiano</span>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="100%"></div>
+              </div>
+              <span class="lang-level">C2</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Inglese</span>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="55%"></div>
+              </div>
+              <span class="lang-level">B1</span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Spagnolo</span>
+              <div class="lang-bar-wrap">
+                <div class="lang-bar" data-width="30%"></div>
+              </div>
+              <span class="lang-level">A2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       EDUCATION
+  ======================================================== -->
+  <section id="education">
+    <div class="section-wrap">
+      <div class="s-head reveal">
+        <span class="s-num">04 / formazione</span>
+        <div class="s-line"></div>
+      </div>
+      <h2 class="s-title reveal" data-i18n="s-edu">Percorso formativo</h2>
+      <p class="s-sub reveal"   data-i18n="s-edu-sub">La mia formazione</p>
+
+      <div class="edu-grid">
+
+        <div class="edu-card uni-card reveal">
+          <span class="edu-icon">🎓</span>
+          <span class="edu-badge uni">Università</span>
+          <div class="edu-inst">Politecnico di Bari</div>
+          <div class="edu-degree" data-i18n="edu1-deg">Laurea Triennale in Ingegneria Informatica e Automazione — Livello EQF 6</div>
+          <div class="edu-date">2023 – Attuale</div>
+        </div>
+
+        <div class="edu-card school-card reveal">
+          <span class="edu-icon">🏫</span>
+          <span class="edu-badge scuola">Diploma</span>
+          <div class="edu-inst">I.T.C. Marco Polo — Bari</div>
+          <div class="edu-degree" data-i18n="edu2-deg">Diploma in Sistemi Informativi Aziendali — Voto: 95/100</div>
+          <div class="edu-date">2018 – 2023</div>
+        </div>
+
+        <div class="edu-card cert-card reveal">
+          <span class="edu-icon">📜</span>
+          <span class="edu-badge cert">Certificazione</span>
+          <div class="edu-inst">Cambridge Assessment English</div>
+          <div class="edu-degree" data-i18n="edu3-deg">B1 Preliminary — Inglese livello B1 (tutte le abilità)</div>
+          <div class="edu-date">13/06/2022</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONTACT
+  ======================================================== -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="s-head reveal">
+        <span class="s-num">05 / contatti</span>
+        <div class="s-line"></div>
+      </div>
+      <h2 class="s-title reveal" data-i18n="s-contact">Parliamoci</h2>
+      <p class="s-sub reveal"   data-i18n="s-contact-sub">Sono sempre aperto a nuove opportunità.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:alessandrominiello@gmail.com" class="contact-item reveal">
+          <div class="c-icon">✉</div>
+          <div>
+            <div class="c-label" data-i18n="c-email-l">Email</div>
+            <div class="c-value">alessandrominiello@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://github.com/Alexx904" target="_blank" class="contact-item reveal">
+          <div class="c-icon">⌥</div>
+          <div>
+            <div class="c-label" data-i18n="c-github-l">GitHub</div>
+            <div class="c-value">github.com/Alexx904</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="contact-item reveal">
+          <div class="c-icon">in</div>
+          <div>
+            <div class="c-label" data-i18n="c-linkedin-l">LinkedIn</div>
+            <div class="c-value">Alessandro Miniello</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================================================
+     FOOTER
+======================================================== -->
+<footer>
+  <span class="footer-l" data-i18n="footer-txt">© 2026 Alessandro Miniello — Tutti i diritti riservati</span>
+  <div class="footer-r">
+    <a href="mailto:alessandrominiello@gmail.com" class="footer-link">Email</a>
+    <a href="https://github.com/Alexx904"         target="_blank" class="footer-link">GitHub</a>
+    <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="footer-link">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
