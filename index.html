@@ -68,7 +68,7 @@
     </p>
 
     <div class="hero-ctas">
-      <a href="mailto:alessandrominiello@gmail.com" class="btn btn-primary" data-i18n="btn-contact">Contattami</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="btn-contact">Contattami</a>
       <a href="https://github.com/Alexx904"                  target="_blank" class="btn btn-ghost">GitHub ↗</a>
       <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
     </div>
@@ -339,6 +339,7 @@
   <!-- ========================================================
        CONTACT
   ======================================================== -->
+
   <section id="contact">
     <div class="section-wrap">
       <div class="s-head reveal">
@@ -346,33 +347,49 @@
         <div class="s-line"></div>
       </div>
       <h2 class="s-title reveal" data-i18n="s-contact">Parliamoci</h2>
-      <p class="s-sub reveal"   data-i18n="s-contact-sub">Sono sempre aperto a nuove opportunità.</p>
+      <p class="s-sub reveal" data-i18n="s-contact-sub">Sono sempre aperto a nuove opportunità.</p>
 
-      <div class="contact-grid">
-        <a href="mailto:alessandrominiello@gmail.com" class="contact-item reveal">
-          <div class="c-icon">✉</div>
-          <div>
-            <div class="c-label" data-i18n="c-email-l">Email</div>
-            <div class="c-value">alessandrominiello@gmail.com</div>
+      <div class="contact-stack">
+        <div class="contact-grid reveal">
+          <a href="https://github.com/Alexx904" target="_blank" class="contact-item">
+            <div class="c-icon">⌥</div>
+            <div>
+              <div class="c-label" data-i18n="c-github-l">GitHub</div>
+              <div class="c-value">github.com/Alexx904</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="contact-item">
+            <div class="c-icon">in</div>
+            <div>
+              <div class="c-label" data-i18n="c-linkedin-l">LinkedIn</div>
+              <div class="c-value">Alessandro Miniello</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="form-wrapper reveal">
+          <div id="fs-status-message">
+            <div data-fs-success class="status-msg success-box" data-i18n="f-success">✓ Messaggio inviato!</div>
+            <div data-fs-error class="status-msg error-box" data-i18n="f-error">✕ Errore nell'invio.</div>
           </div>
-        </a>
-        <a href="https://github.com/Alexx904" target="_blank" class="contact-item reveal">
-          <div class="c-icon">⌥</div>
-          <div>
-            <div class="c-label" data-i18n="c-github-l">GitHub</div>
-            <div class="c-value">github.com/Alexx904</div>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="contact-item reveal">
-          <div class="c-icon">in</div>
-          <div>
-            <div class="c-label" data-i18n="c-linkedin-l">LinkedIn</div>
-            <div class="c-value">Alessandro Miniello</div>
-          </div>
-        </a>
+
+          <form id="contact-form" class="dark-blue-form">
+            <div class="input-row">
+              <input type="text" name="name" data-i18n-ph="f-name" placeholder="Il tuo Nome" required data-fs-field />
+              <input type="email" name="email" data-i18n-ph="f-mail" placeholder="La tua Email" required data-fs-field />
+            </div>
+            <div class="input-group">
+              <textarea name="message" rows="5" data-i18n-ph="f-msg" placeholder="Come posso aiutarti?" required data-fs-field></textarea>
+            </div>
+            <button type="submit" data-fs-submit-btn class="btn-submit">
+              <span data-i18n="f-btn">Invia Messaggio</span>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
 </main>
 
@@ -382,7 +399,6 @@
 <footer>
   <span class="footer-l" data-i18n="footer-txt">© 2026 Alessandro Miniello — Tutti i diritti riservati</span>
   <div class="footer-r">
-    <a href="mailto:alessandrominiello@gmail.com" class="footer-link">Email</a>
     <a href="https://github.com/Alexx904"         target="_blank" class="footer-link">GitHub</a>
     <a href="https://www.linkedin.com/in/alessandro-miniello" target="_blank" class="footer-link">LinkedIn</a>
   </div>

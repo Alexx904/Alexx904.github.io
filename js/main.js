@@ -20,7 +20,7 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(animCursor);
 })();
 
-document.querySelectorAll('a, button, .proj-card, .skill-chip, .contact-item, .edu-card').forEach(el => {
+document.querySelectorAll('a, button, input, textarea, .proj-card, .skill-chip, .contact-item, .edu-card').forEach(el => {
   el.addEventListener('mouseenter', () => circle.classList.add('hover'));
   el.addEventListener('mouseleave', () => circle.classList.remove('hover'));
 });
@@ -288,6 +288,13 @@ const translations = {
   'footer-txt':   { it: '© 2026 Alessandro Miniello — Tutti i diritti riservati',
                     en: '© 2026 Alessandro Miniello — All rights reserved' },
   'badge-status-txt': { it: 'Disponibile per opportunità', en: 'Available for opportunities' },
+  /* FORM */
+  'f-name':    { it: 'Il tuo Nome',    en: 'Your Name' },
+  'f-mail':    { it: 'La tua Email',   en: 'Your Email' },
+  'f-msg':     { it: 'Come posso aiutarti?', en: 'How can I help you?' },
+  'f-btn':     { it: 'Invia Messaggio', en: 'Send Message' },
+  'f-success': { it: '✓ Messaggio inviato con successo!', en: '✓ Message sent successfully!' },
+  'f-error':   { it: '✕ Errore nell\'invio. Riprova.', en: '✕ Error sending. Try again.' },
 };
 
 let currentLang = 'it';
@@ -296,10 +303,19 @@ function applyLang(lang) {
   currentLang = lang;
   document.documentElement.lang = lang;
 
+  // Traduzione testi standard (textContent)
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (translations[key] && translations[key][lang]) {
       el.textContent = translations[key][lang];
+    }
+  });
+
+  // NUOVO: Traduzione Placeholder
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.dataset.i18nPh;
+    if (translations[key] && translations[key][lang]) {
+      el.setAttribute('placeholder', translations[key][lang]);
     }
   });
 
@@ -311,3 +327,14 @@ function applyLang(lang) {
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => applyLang(btn.dataset.lang));
 });
+
+if (document.getElementById('contact-form')) {
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { 
+    formElement: '#contact-form', 
+    formId: 'myklwnwd',
+    onSuccess: function() {
+      document.getElementById('contact-form').style.display = 'none';
+    }
+  });
+}

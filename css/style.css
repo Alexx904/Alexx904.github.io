@@ -632,11 +632,27 @@ main { position: relative; z-index: 1; }
 }
 
 /* ============================================================
-   CONTACT
+   CONTACT & FORM
 ============================================================ */
-.contact-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+.contact-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1rem;
 }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
 .contact-item {
   display: flex; align-items: center; gap: 1.2rem;
   background: var(--card); border: 1px solid var(--border);
@@ -649,20 +665,87 @@ main { position: relative; z-index: 1; }
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.35);
 }
-.c-icon {
-  width: 44px; height: 44px; flex-shrink: 0;
-  background: rgba(56,189,248,0.07);
-  border: 1px solid rgba(56,189,248,0.15);
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.2rem;
+
+/* Form Styles */
+.form-wrapper {
+  width: 100%;
+  max-width: 750px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
 }
-.c-label {
-  font-family: var(--font-mono); font-size: 0.62rem;
-  color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase;
-  margin-bottom: 0.2rem;
+
+.dark-blue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
-.c-value { font-size: 0.9rem; color: var(--text); }
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .input-row { grid-template-columns: 1fr; }
+}
+
+.dark-blue-form input, 
+.dark-blue-form textarea {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.dark-blue-form input:focus, 
+.dark-blue-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(56, 189, 248, 0.03);
+}
+
+.btn-submit {
+  align-self: flex-start;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: none;
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
+}
+
+/* Status Messages */
+.status-msg {
+  display: none;
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-align: center;
+}
+.success-box { background: rgba(52, 211, 153, 0.1); color: var(--green); border: 1px solid var(--green); }
+.error-box { background: rgba(239, 68, 68, 0.1); color: #f87171; border: 1px solid #f87171; }
 
 /* ============================================================
    FOOTER
