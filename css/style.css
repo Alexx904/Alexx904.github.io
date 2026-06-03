@@ -12,7 +12,7 @@
   --accent2:  #818cf8;
   --green:    #34d399;
   --text:     #e8f0fe;
-  --muted:    #546e8a;
+  --muted:    #c4e1ff;
   --white:    #ffffff;
 
   --font-display: 'Fraunces', serif;
@@ -472,7 +472,7 @@ main { position: relative; z-index: 1; }
 .proj-card::before {
   content: '';
   position: absolute; inset: -1px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2), var(--green));
+  background: linear-gradient(135deg, rgba(56,189,248,0.4), rgba(129,140,248,0.4));
   border-radius: 14px; z-index: -1;
   opacity: 0; transition: opacity 0.3s ease;
 }
